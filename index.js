@@ -10,6 +10,9 @@ const bodyParser = require('body-parser')
 // create express app
 const app = express();
 
+//import router
+const router = require('./routes/router');
+
 // use cors
 app.use(cors());
 
@@ -26,6 +29,9 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
+//define routes
+app.use('/api', router);
 
 // listen for requests
 app.listen(port, () => {
