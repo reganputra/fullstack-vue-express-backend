@@ -1,3 +1,3 @@
-Framework: Vue, Express, Node.js
+Framework: Express, Node.js
 
 Database: MySQL, Prisma
