@@ -22,5 +22,6 @@ router.get('/admin/users',verifyToken, userController.findUsers);
 router.post('/admin/users',verifyToken, userValidation ,userController.createUser);
 router.get('/admin/users/:id',verifyToken, userValidation ,userController.getUserById);
 router.put('/admin/users/:id', verifyToken, userValidation, userController.updateUser);
+router.delete('/admin/users/:id', verifyToken, userController.destroyUser);
 
 module.exports = router;
