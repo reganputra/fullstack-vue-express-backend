@@ -1,3 +1,5 @@
 Framework: Express, Node.js
 
-Database: MySQL, Prisma
+Database: PostgreSQL, Prisma
+
+Deployment: Vercel
