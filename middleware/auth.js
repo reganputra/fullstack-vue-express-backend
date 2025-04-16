@@ -1,7 +1,4 @@
-// Import express
 const express = require('express');
-
-// Import jwt
 const jwt = require('jsonwebtoken');
 
 const verifyToken = (req, res, next) => {

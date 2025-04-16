@@ -55,7 +55,7 @@ const userLogin = async (req, res) => {
                message: "Invalid password",
            });
 
-       //generate token JWT
+       //generate JWT token
        const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
            expiresIn: "1h",
        });

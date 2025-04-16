@@ -76,7 +76,7 @@ const findUsers = async (req, res) => {
 //  get user by id
 const getUserById = async (req, res) => {
 
-    //get ID from params
+
     const { id } = req.params;
 
     try {
@@ -108,7 +108,7 @@ const getUserById = async (req, res) => {
 //  update user
 const updateUser = async (req, res) => {
 
-    //get ID from params
+
     const { id } = req.params;
 
     const errors = validationResult(req);
@@ -152,7 +152,7 @@ const updateUser = async (req, res) => {
 // delete user
 const destroyUser = async (req, res) => {
 
-    //get ID from params
+
     const { id } = req.params;
 
     try {
