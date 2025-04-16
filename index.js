@@ -1,20 +1,13 @@
-
-// import express
 const express = require('express');
-// import cors
 const cors = require('cors');
-//import bodyParser
 const bodyParser = require('body-parser')
 
 
-// create express app
 const app = express();
-
-//import router
 const router = require('./routes/router');
 
 // use cors
-app.use(cors());
+app.use(cors('http://localhost:5173/'));
 
 // define port
 const port = 3000;
@@ -22,10 +15,10 @@ const port = 3000;
 // use bodyParser
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// parse requests of content-type - application/json
+
 app.use(bodyParser.json())
 
-// define a route
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
@@ -33,7 +26,7 @@ app.get('/', (req, res) => {
 //define routes
 app.use('/api', router);
 
-// listen for requests
+
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
