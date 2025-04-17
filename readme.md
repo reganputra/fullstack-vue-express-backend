@@ -1,5 +1,20 @@
-Framework: Express, Node.js
+# Setup
 
-Database: PostgreSQL, Prisma
+```bash
+# install dependencies
+$ npm install
+# run server
+$ npm run dev
+```
+### Initialize Prisma
+```bash
+$ npx prisma init
 
-Deployment: Vercel
+# if using cloud DB or NoSQL
+$ npx prisma generate
+
+# Database migration
+$ npx prisma migrate dev
+```
+
+
