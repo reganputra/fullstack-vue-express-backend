@@ -14,6 +14,7 @@ const findUsers = async (req, res) => {
                 id: true,
                 name: true,
                 email: true,
+                nationality: true,
             },
             orderBy: {
                 id: "desc",
@@ -56,6 +57,7 @@ const findUsers = async (req, res) => {
                     name: req.body.name,
                     email: req.body.email,
                     password: hashedPassword,
+                    nationality: req.body.nationality
                 },
             });
 
@@ -88,6 +90,7 @@ const getUserById = async (req, res) => {
                 id: true,
                 name: true,
                 email: true,
+                nationality: true,
             },
         });
 
