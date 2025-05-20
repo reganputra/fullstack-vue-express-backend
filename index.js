@@ -7,7 +7,7 @@ const app = express();
 const router = require('./routes/router');
 
 // use cors
-app.use(cors('http://localhost:5173/'));
+app.use(cors('https://fullstack-vue-express-frontend.vercel.app/'));
 
 // define port
 const port = 3000;
@@ -28,5 +28,5 @@ app.use('/api', router);
 
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
